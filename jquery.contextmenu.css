@@ -20,6 +20,7 @@
   margin: 0 0 0 0;
   padding: 1px;
   background-repeat: no-repeat;
+  list-style: none;
 }
 
 .contextMenuPlugin > li > a {
