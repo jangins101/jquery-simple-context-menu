@@ -63,7 +63,10 @@ jQuery.fn.contextPopup = function(menuData) {
         } else if (item.action) {
             row.find('.'+settings.linkClickerClass).click(function () { item.action(e); });
         }
-
+        
+        if (item.data) {
+	    row.data("data", item.data);
+        }
       } else {
         $('<li class="' + settings.seperatorClass + '"></li>').appendTo(menu);
       }
