@@ -61,7 +61,7 @@ jQuery.fn.contextPopup = function(menuData) {
         if (item.isEnabled != undefined && !item.isEnabled()) {
             row.addClass('disabled');
         } else if (item.action) {
-            row.find('.'+settings.linkClickerClass).click(function () { item.action(e); });
+            row.find('.'+settings.linkClickerClass).click(function () { item.action(e, item.data); });
         }
         
         if (item.data) {
